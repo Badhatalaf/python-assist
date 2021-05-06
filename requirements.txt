@@ -4,3 +4,4 @@ gTTS
 wikipedia
 pyttsx3
 wolframalpha
+PyAudio
