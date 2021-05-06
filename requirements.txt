@@ -1,0 +1,6 @@
+playsound
+SpeechRecognition
+gTTS
+wikipedia
+pyttsx3
+wolframalpha
