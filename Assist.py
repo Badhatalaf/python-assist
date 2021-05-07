@@ -38,17 +38,18 @@ def say(text):
     except:
         engine.say(text)
         engine.runAndWait()
+        print("Olivia: " + text)
 
 
 def wishUser():
-    hour = datetime.datetime.now().hour
-    if hour >= 0 and hour < 12:
-        say("Hi, Good Morning")
-    elif hour >= 12 and hour < 18:
-        say("Hi, Good Afternoon")
-    else:
-        say("Hi, Good Evening")
-    say("I am Olivia. How can I help?")
+    # hour = datetime.datetime.now().hour
+    # if hour >= 0 and hour < 12:
+    #     say("Hi, Good Morning")
+    # elif hour >= 12 and hour < 18:
+    #     say("Hi, Good Afternoon")
+    # else:
+    #     say("Hi, Good Evening")
+    say("Please like, share and subscribe.")
 
 
 def get_audio():
@@ -61,7 +62,8 @@ def get_audio():
             said = r.recognize_google(audio)
             print("You: " + said)
         except Exception as e:
-            print("Error:", e)
+            if e != "":
+                print("Error:", e)
     return said.lower()
 
 
