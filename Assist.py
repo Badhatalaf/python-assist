@@ -42,14 +42,14 @@ def say(text):
 
 
 def wishUser():
-    # hour = datetime.datetime.now().hour
-    # if hour >= 0 and hour < 12:
-    #     say("Hi, Good Morning")
-    # elif hour >= 12 and hour < 18:
-    #     say("Hi, Good Afternoon")
-    # else:
-    #     say("Hi, Good Evening")
-    say("Please like, share and subscribe.")
+    hour = datetime.datetime.now().hour
+    if hour >= 0 and hour < 12:
+        say("Hi, Good Morning")
+    elif hour >= 12 and hour < 18:
+        say("Hi, Good Afternoon")
+    else:
+        say("Hi, Good Evening")
+    say("I am Olivia. How can I help?")
 
 
 def get_audio():
