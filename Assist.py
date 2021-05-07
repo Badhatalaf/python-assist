@@ -14,7 +14,6 @@ import json
 import pyttsx3
 import wolframalpha
 import tkinter
-from env import wolfram_API
 
 engine = pyttsx3.init()
 
